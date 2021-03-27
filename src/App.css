@@ -1,7 +1,19 @@
 .App {
   text-align: center;
+  min-height:100%;
+  padding:0;
+  margin:0;
 }
-
+html, body{
+  padding: 0;
+  margin: 0;
+}
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +47,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+#renderPages{
+  /* position:absolute; */
+  /* min-height:90%;
+  min-width:90%; */
+}
+#navBar{
+  margin-left: 62%;
+  float:right;
+  position:static;
+  z-index:2;
+}
+/* .Home{
+  display:grid;
+  height:100%;
+  background-image: "../public/code.jpg";
+} */
+#homePage{
+  z-index:0;
+  /* height:100%;
+  width:100%; */
+  margin:auto;
+  flex:1;
+  overflow: auto;
+}
+#homePage::-webkit-scrollbar{
+  display: none;
+}
+
+.paperBox{
+  width:100%;
+  height:100%;
 }
